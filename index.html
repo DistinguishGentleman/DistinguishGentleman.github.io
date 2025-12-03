@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Auto - Главная</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="/index.html" class="user-profile">
+                <img src="/img/logo.png" alt="Лого" class="logo-icon">
+            </a></div>
+        <nav class="nav-center">
+            <a href="/index.html">Главная</a>
+            <a href="/about.html">О нас</a>
+            <a href="/price.html">Цены</a>
+            <a href="/contacts.html">Контакты</a>
+        </nav>
+
+
+        <div class="header-right">
+            <a href="javascript:void(0)" class="user-profile" onclick="openAuthOverlay()">
+                <img src="img/LCicon.png" alt="Личный кабинет" class="user-icon">
+            </a>
+           <button class="zapic-btn" onclick="openRecordOverlay()">
+                <p class="zapic-text" id="stas-lox">Запись</p>
+            </button>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="/index.html" class="menu-item">Главная</a><li>
+                <li><a href="/about.html" class="menu-item">О нас</a><li>
+                <li><a href="/price.html" class="menu-item">Цены</a><li>
+                <li><a href="/contacts.html" class="menu-item">Контакты</a><li>
+                <li><a href="javascript:void(0)" class="menu-item" onclick="openAuthOverlay()"> Личный кабинет</a><li>
+                <li><button class="zapic-btn" onclick="openRecordOverlay()">
+                    <p class="zapic-text" id="stas-lox">Запись</p>
+                </button><li>    
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="myAlert" class="alert alert-success mt-5 alert-dismissible fade fixed-top text-center justify-content-right" role="alert">
+            Вы успешно записаны на ремонт!
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <section class="content-section">
+                <div class="content-container">
+                    <div class="content-container__Mh1"><h2 class="content-container__Nh2">Новости и Акции</h2></div>
+                    <div class="content">
+                        <div class="content-block">
+                            <h2>Мы переехали!</h2>
+                            <p>Наш автосервис теперь работает по-новому адресу: <span><b>Шафировский проспект 28к4</b></span>
+                                Вас ждет:<br>• Больше пространства• Новое оборудование<br>• Все те же надежные мастера
+                                <br><br>Телефон: +7 (495) 123-45-67 <br>Режим работы: 8.00-19.00
+                            </p>
+                        </div>
+                        <div class="content-block">
+                            <h2>Кошачья пара</h2>
+                            <p>Приведи друга — получи выгоду вдвоём <br><br>Ваша скидка: 15%Друга: 25% на первый заказ <br><br>Нас уже
+                                786 пушистых пар!</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+            <div class="social-section">
+                <span class="socialText">Мы в соцсетях:</span>
+                <div class="social-icons">
+                    <div> <img src="/img/tel.png" class="social-icon"></div>
+                    <div> <img src="/img/vk.png" alt="VK" class="social-icon"></div>
+                    <div> <img src="/img/max.png" alt="Max" class="social-icon"></div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="phone-number">+7 (495) 123-45-67
+                    <br>Круглосуточно
+                </div>
+            </div>
+            
+        <div class="copyright">
+            Copyright © 2025 Cats Auto
+        </div>
+    </footer>
+
+<!-- side-menu -->
+    <!-- <div class="burger-menu-auth-overlay" id="menuOverlay" style="display: none">
+        <nav class="Ov-nav-center">
+            <a href="/index.html">Главная</a>
+            <a href="/about.html">О нас</a>
+            <a href="/price.html">Цены</a>
+            <a href="/contacts.html">Контакты</a>
+        </nav>
+    
+        <div class="Ov-header-right">
+            <a href="javascript:void(0)" class="user-profile" onclick="openAuthOverlay()">
+                <img src="img/LCicon.png" alt="Личный кабинет" class="user-icon">
+            </a>
+            <button class="ov-zapic-btn" onclick="openRecordOverlay()">
+                <p class="zapic-text" id="stas-lox">Запись</p>
+            </button>
+        </div>
+    </div> -->
+
+
+
+
+<!-- record -->
+    <div class="record-overlay" id="recordOverlay" style="display: none">
+        <div class="content-containerRecord">
+            <h2 class="Nh2">Запись</h2>
+            <div class="contentRecord">
+                <div class="content-blockRecord">
+                    <p class="dateItime_p">Направление ремонта:</p>
+                    <div class="tableRecord">
+                        <div class="data-TRec">
+                            <div class="data-IR">Диагностика</div>
+                        </div>
+                        <div class="data-TRec">
+                            <div class="data-IR">Ходовая часть</div>
+                        </div>
+                        <div class="data-TRec">
+                            <div class="data-IR">Двигатель</div>
+                        </div>
+                        <div class="data-TRec">
+                            <div class="data-IR">Техническое обслуживание</div>
+                        </div>
+                        <div class="data-TRec">
+                            <div class="data-IR">Тормозная система</div>
+                        </div>
+                        <div class="data-TRec">
+                            <div class="data-IR">Электрика</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="content-blockRecord">
+                        <div class="contentRecordName">
+                            <div class="dateItime">
+                                        <div class="dateItime_p">
+                                            Дата и время:
+                                        </div>
+                                        <div class="dateItimeWeek">
+                                            <button class="btn-strelka"><img class="strelka" src="/img/strelka.png" alt="strelka"></button>
+                                            <p class="dateItime_p">25 октября - 31 октября </p> 
+                                            <button class="btn-strelka"><img class="strelka" src="/img/strelka2.png" alt="streslka"> </button>
+                                        </div>
+                            </div>
+                                
+                            <div class="tableRecord">
+                                <div class="data-TR">
+
+                                    <div class="DTR">
+                                        <div class="data-IRecord">25</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">26</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">27</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">28</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">29</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">30</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="DTR">
+                                        <div class="data-IRecord">31</div>
+                                        <div>
+                                            <div class="data-IRec">9.00</div>
+                                            <div class="data-IRec">11.00</div>
+                                            <div class="data-IRec">13.00</div>
+                                            <div class="data-IRec">15.00</div>
+                                            <div class="data-IRec">17.00</div>
+                                            <div class="data-IRec">19.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="rec-zapic-btn" id="myButton">
+                                <p id="rec-zapic-p">Записаться</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- auth -->
+<div class="auth-overlay" id="authOverlay" style="display: none">
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="title">
+                <h2 class="auth_overlay_h2">Вход</h2>
+            </div>
+            <button class="close-btn" onclick="closeAllOverlays()">
+                <img src="/img/crossClose.png" alt="крест" height="30">
+            </button>
+        </div>
+
+        <form class="auth-form">
+            <div class="input-group">
+                <label for="login"></label>
+                <input type="text" id="login" name="login" placeholder="Логин" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Пароль" required>
+            </div>
+
+            <div class="remember-section">
+                <input type="checkbox" id="agree" name="agree" value="agree" class="galka">
+                <label for="agree" class="rememberMe">Запомнить меня?</label>
+            </div>
+
+            <div class="register-link">
+                <span class="auth-text">Нет аккаунта? </span>
+                <a href="javascript:void(0)" class="register-text" onclick="switchToRegistration()">Зарегистрироваться!</a>
+            </div>
+            <div class="mybtn">
+                <button type="button" class="btnAR" onclick="closeAuthOverlay()">Войти</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- reg -->
+<div class="auth-overlay" id="registrationOverlay" style="display: none">
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="title">
+                <h2 class="auth_overlay_h2">Регистрация</h2>
+            </div>
+            <button class="close-btn" onclick="closeAllOverlays()">
+                <img src="/img/crossClose.png" alt="крест" height="30">
+            </button>
+        </div>
+
+        <form class="auth-form">
+            <div class="input-group">
+                <label for="reg-login"></label>
+                <input type="text" id="reg-login" name="reg-login" placeholder="Логин" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password"></label>
+                <input type="password" id="reg-password" name="reg-password" placeholder="Пароль" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password-repeat"></label>
+                <input type="password" id="reg-password-repeat" name="reg-password-repeat" 
+                       placeholder="Подтверждение пароля" required>
+            </div>
+            
+            <div class="register-link">
+                <span class="auth-text">Уже есть аккаунт? </span>
+                <a href="javascript:void(0)" class="register-text" onclick="switchToAuth()">Войти!</a>
+            </div>
+            
+            <div class="mybtn">
+                <button type="button" class="btnAR" onclick="closeRegistrationOverlay()">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="/js/script.js"></script>
+    <script> document.getElementById('myButton').addEventListener('click', function () {var alertElement = new bootstrap.Alert(document.getElementById('myAlert'));document.getElementById('myAlert').classList.add('show'); }); </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

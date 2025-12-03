@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+sds
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cats Auto - Контакты</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="logo"><a href="/index.html" class="user-profile">
+        <img src="/img/logo.png" alt="Лого" class="logo-icon">
+      </a></div>
+    <nav class="nav-center">
+      <a href="/index.html">Главная</a>
+      <a href="/about.html">О нас</a>
+      <a href="/price.html">Цены</a>
+      <a href="/contacts.html">Контакты</a>
+    </nav>
+
+
+    <div class="header-right">
+      <a href="auth.html">
+        <img src="img/LCicon.png" alt="Личный кабинет" class="user-icon">
+      </a>
+      <button class="zapic-btn" onclick="openRecordOverlay()">
+        <p>Запись</p>
+      </button>
+    </div>
+
+    <div class="menu">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger"></label>
+      <ul class="menu-list">
+        <li><a href="/index.html" class="menu-item">Главная</a>
+        <li>
+        <li><a href="/about.html" class="menu-item">О нас</a>
+        <li>
+        <li><a href="/price.html" class="menu-item">Цены</a>
+        <li>
+        <li><a href="/contacts.html" class="menu-item">Контакты</a>
+        <li>
+        <li><a href="javascript:void(0)" class="menu-item" onclick="openAuthOverlay()"> Личный кабинет</a>
+        <li>
+        <li><button class="zapic-btn" onclick="openRecordOverlay()">
+            <p class="zapic-text" id="stas-lox">Запись</p>
+          </button>
+        <li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="lc_content-section">
+      <!-- <div class="lc_content lc_content-block2"> -->
+      <div class="card mb-3 d-flex lc_content lc_content-block2 justify-content-center flex-wrap" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/img/lcIMG.png" class="img-fluid rounded-start " alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body backColor">
+              <h5 class="card-title">Логин</h5>
+              <p class="card-text text-start">Стаж вождения: <br> Марка авто: <br> Год выпуска:</p>
+              <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="lc_content-block2">
+        <h2 class="lc_content-section_h2">Бонусы и скидки</h2>
+        <div class="lc_content-block2-1">
+          <p>У вас 233 бонуса</p>
+          <p>Ваша скидка - 3%</p>
+        </div>
+        <div>
+          <img src="/img/disc.png" class="lc_content-section_imgDisc" alt="dicount">
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- <div class="DivTableLc">
+      <div class="tableLc">
+        <div class="tableLc_head-TP">
+          <div class="tableLc_head-I">Номер</div>
+          <div class="tableLc_head-I">Дата оформления</div>
+          <div class="tableLc_head-I">Дата визита</div>
+          <div class="tableLc_head-I">Время</div>
+          <div class="tableLc_head-I">Адрес</div>
+          <div class="tableLc_head-I">Статус</div>
+        </div>
+
+        <div class="tableLc_data-TP">
+          <div class="tableLc_data-I">6Y45Z</div>
+          <div class="tableLc_data-I">01.01.2025</div>
+          <div class="tableLc_data-I">01.01.2025</div>
+          <div class="tableLc_data-I">9-30</div>
+          <div class="tableLc_data-I">г. Москва, ул. Автозаводская, д. 12, стр. 1</div>
+          <div class="tableLc_data-I">Ожидает</div>
+        </div>
+      </div>
+    </div> -->
+    <div class="lc_table">
+      <table class="table backColor">
+        <thead>
+          <tr class="backColor" style="font-family: Pixel;">
+            <th scope="col">#</th>
+            <th scope="col">Дата оформления</th>
+            <th scope="col">Дата визита</th>
+            <th scope="col">Время</th>
+            <th scope="col">Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="backColor" scope="row">Y-231</th>
+            <td>01.01.2025</td>
+            <td>01.01.2025</td>
+            <td>9-30</td>
+            <td>Ожидает</td>
+        </tbody>
+      </table>
+    </div>
+    <div class="lc_tableMob">
+  <table class="table backColor d-block">
+    <thead>
+      <tr class="backColor d-block" style="font-family: Pixel;">
+        <th class="d-block" scope="col">#</th>
+        <td class="d-block">Y-231</td>
+        
+        <th class="d-block" scope="col">Дата оформления</th>
+        <td class="d-block">01.01.2025</td>
+        
+        <th class="d-block" scope="col">Дата визита</th>
+        <td class="d-block">01.01.2025</td>
+        
+        <th class="d-block" scope="col">Время</th>
+        <td class="d-block">9-30</td>
+        
+        <th class="d-block" scope="col">Статус</th>
+        <td class="d-block">Ожидает</td>
+      </tr>
+    </thead>
+  </table>
+</div>
+  </main>
+  <footer>
+    <div class="social-section">
+      <span class="socialText">Мы в соцсетях:</span>
+      <div class="social-icons">
+        <div><img src="/img/tel.png" class="social-icon" /></div>
+        <div><img src="/img/vk.png" alt="VK" class="social-icon" /></div>
+        <div><img src="/img/max.png" alt="Max" class="social-icon" /></div>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="phone-number">
+        +7 (495) 123-45-67
+        <span><br />Круглосуточно</span>
+      </div>
+    </div>
+
+    <div class="copyright">Copyright © 2025 Cats Auto</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

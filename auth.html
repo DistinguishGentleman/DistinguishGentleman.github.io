@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="auth-overlay">
+        <div class="auth-container">
+            <div class="auth-header">
+                <div class="title">
+                    <h2>Вход</h2>
+                </div>
+                <a href="/index.html"><button class="close-btn"><img src="/img/crossClose.png" alt="крест" height="30"></button></a>
+            </div>
+
+            <form class="auth-form">
+                <div class="input-group">
+                    <label for="login"></label>
+                    <input type="text" id="login" name="login" placeholder="Логин" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Пароль" required>
+                </div>
+
+                <div class="remember-section">
+                    <input type="checkbox" id="agree" name="agree" value="agree" class="galka">
+                    <label for="agree" class="rememberMe">Запомнить меня?</label>
+                </div>
+
+
+                <div class="register-link">
+                    <span style="font-size: 12px;">Нет аккаунта? </span>
+                    <a href="/reg.html" class="register-text">Зарегистрироваться!</a>
+                </div>
+                <div class="mybtn">
+                    <button type="submit" class="btnAR">Войти
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
