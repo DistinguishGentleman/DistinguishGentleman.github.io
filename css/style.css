@@ -58,13 +58,15 @@ header {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     font-family: "Pixel";
-    width: auto;
+    width: 100%;
     height: 90px;
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    /* position: absolute;
+    top: 0; */
 }
 
 
@@ -1054,6 +1056,20 @@ footer {
 
 
 /* Личный кабинет */
+.lc__header {
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    font-family: "Pixel";
+    width: 100%;
+    height: 90px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+}
 
 .lcIMG {
     border-radius: 10px;
@@ -1123,6 +1139,11 @@ footer {
     padding: 100px 0;
     display: flex;
     justify-content: center;
+    gap: 50px;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .lc_content-block_2div {
@@ -1148,6 +1169,14 @@ footer {
     justify-content: center;
     gap: 0px;
     flex-wrap: wrap;
+}
+
+.input.invalid{
+    background-color: red;
+}
+
+.input.valid{
+    background-color: green;
 }
 
 .tableLc {
@@ -1345,6 +1374,16 @@ table{
     z-index: 1000; /* убедитесь что z-index достаточный */
 }
 
+.Nh2 {
+    font-family: "Pixel";
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    font-weight: normal;
+}
+
+
 .content-containerRecord {
     padding-top: 10px;
     width: auto;
@@ -1413,6 +1452,7 @@ table{
 .dateItime_p {
     font-family: "Pixel";
     font-size: 14px;
+    text-align: center;
 }
 
 
@@ -1533,7 +1573,7 @@ table{
     padding-left: 10px;
 }
 
-
+/* 
 @media (max-width: 767px) {
     .data-TR {
         grid-template-columns: repeat(3, 1fr);
@@ -1614,7 +1654,7 @@ table{
     }
 
 
-}
+} */
 
 
 
@@ -1814,6 +1854,38 @@ table{
     .zapic-btn {
         margin-left: 20px;
     }
+
+    .data-TR {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .data-IRecord,
+    .data-IRec {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contentRecord {
+        margin: 10px;
+    }
+
+    .content-containerRecord {
+        margin: 50px 20px;
+    }
+
+    .dateItimeWeek {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dateItimeWeek p {
+        text-align: center;
+    }
+
+    .IRC {
+        display: none;
+    }
 }
 
 
@@ -2000,5 +2072,49 @@ table{
 
     footer {
         margin-bottom: 20px !important;
+    }
+
+    .data-TR {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .data-IRecord,
+    .data-IRec {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .content-containerRecord {
+        margin: 30px 10px;
+        padding: 15px;
+    }
+
+    .contentRecord {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rec-zapic-btn {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    #rec-zapic-p {
+        margin: 5px;
+        padding-left: 5px;
+    }
+
+    .strelka {
+        width: 35px;
+        height: 20px;
+    }
+
+    .dateItimeWeek {
+        gap: 5px;
+    }
+
+    .dateItimeWeek p {
+        font-size: 16px;
     }
 }
