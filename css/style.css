@@ -1658,34 +1658,6 @@ table{
 
 
 
-@media (max-width: 767px) {
-    .record-overlay {
-        align-items: flex-start; /* выравнивание по верху */
-        padding: 10px 0;
-    }
-    
-    .content-containerRecord {
-        margin: 50px auto; /* уменьшен отступ */
-        max-width: 95%; /* чуть больше ширины */
-    }
-    
-    .contentRecord {
-        margin: 10px;
-        flex-direction: column; /* вертикальное расположение на мобильных */
-    }
-}
-
-@media (max-width: 480px) {
-    .content-containerRecord {
-        margin: 30px auto;
-        padding: 15px;
-    }
-    
-    .record-overlay {
-        padding: 5px 0;
-    }
-}
-
 
 
 
@@ -1885,6 +1857,21 @@ table{
 
     .IRC {
         display: none;
+    }
+
+    .record-overlay {
+        align-items: flex-start; /* выравнивание по верху */
+        padding: 10px 0;
+    }
+    
+    .content-containerRecord {
+        margin: 50px auto; /* уменьшен отступ */
+        max-width: 95%; /* чуть больше ширины */
+    }
+    
+    .contentRecord {
+        margin: 10px;
+        flex-direction: column; /* вертикальное расположение на мобильных */
     }
 }
 
@@ -2116,5 +2103,14 @@ table{
 
     .dateItimeWeek p {
         font-size: 16px;
+    }
+
+    .content-containerRecord {
+        margin: 30px auto;
+        padding: 15px;
+    }
+    
+    .record-overlay {
+        padding: 5px 0;
     }
 }
