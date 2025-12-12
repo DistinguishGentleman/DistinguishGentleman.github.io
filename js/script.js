@@ -54,9 +54,32 @@ function closeRecordOverlay() {
 // }
 
 
+// const input = document.querySelector('.input');
+// const error = document.querySelector('.error');
+// const button = document.querySelector('.submit');
+
+// function validateAndSubmit() {
+//     const name = input.value.trim();
+//     error.textContent = '';
+    
+//     if (!name) {
+//         error.textContent = 'Введите имя';
+//         input.classList.add('invalid');
+//         return;
+//     }
+    
+//     if (name.length < 2 || name.length > 30) {
+//         error.textContent = 'Имя должно быть от 2 до 30 символов';
+//         input.classList.add('invalid');
+//         return;
+//     }
 
 
+//     alert(`Добро пожаловать, ${name}!`);
+//     input.value = '';
+// }
 
+// button.addEventListener('click', validateAndSubmit);
 
 
 
