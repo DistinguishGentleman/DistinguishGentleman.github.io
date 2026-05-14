@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Пользователь | Admin Auto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- BOOTSTRAP ICONS --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- THEME --> 
+    <link id="theme-css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row vh-100 flex-nowrap">
+        <!-- SIDEBAR DESKTOP -->
+        <div class="sidebar col-lg-3 col-xl-2 bg-dark text-white p-0 d-none d-lg-block mybr">
+          <!-- LOGO -->
+          <div class="p-2 border-bottom border-secondary">
+            <div class="d-flex align-items-center gap-3 myqwer">
+              <h2 class="m-0 text-nowrap  fw-light">Admin Auto</h2>
+              <button class="btn btn-outline-secondary toggle p-1">
+                <img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
+            </div>
+          </div>
+
+          <!-- MENU -->
+          <div class="d-flex flex-column gap-4 p-2 fs-4">
+            <a
+              href="index.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-house-fill"></i>
+              <span>Главная</span>
+            </a>
+
+            <a
+              href="users.html"
+              class="text-white text-decoration-none fw-bold d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-person-fill"></i>
+              <span>Пользователи</span>
+            </a>
+
+            <a
+              href="record.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-journal-text"></i>
+              <span>Записи</span>
+            </a>
+
+            <a
+              href="service.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-tools"></i>
+              <span>Услуги</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col p-0 d-flex flex-column">
+          <!-- TOPBAR -->
+          <div class="topbar p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- MOBILE MENU -->
+              <button
+                class="btn btn-dark d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileSidebar"
+              >
+                <i class="bi bi-list fs-4"></i>
+              </button>
+
+              <!-- PROFILE -->
+              <div class="ms-auto">
+                <a
+                href="user.html"
+                class="d-flex align-items-center gap-2 text-decoration-none text-dark"
+              >
+                <img
+                  src="img/ryan.png"
+                  class="rounded-circle"
+                  width="45"
+                  height="45"
+                />
+
+                  <span class="fw-medium d-none d-md-block">
+                    Ryan Gosling
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN -->
+          <div class="p-3 p-md-4 overflow-auto">
+            <!-- HEADER -->
+            <div
+              class="d-flex flex-column flex-xl-row justify-content-between gap-3 mb-4"
+            >
+              <!-- BACK -->
+              <a href="users.html" class="text-decoration-none text-dark fs-5">
+                <i class="bi bi-chevron-left"></i>
+                Назад к списку
+              </a>
+
+              <!-- ACTIONS -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary">
+                  <i class="bi bi-pencil me-2"></i>
+                  Редактировать
+                </button>
+
+                <button class="btn btn-outline-danger">
+                  <i class="bi bi-lock-fill me-2"></i>
+                  Заблокировать
+                </button>
+              </div>
+            </div>
+
+            <!-- INFO BLOCKS -->
+            <div class="row g-4 mb-4">
+              <!-- PROFILE -->
+              <div class="col-xl-3">
+                <div class="card border-0 h-100">
+                  <div class="card-body text-center p-4">
+                    <img
+                      src="img/Ryan-Gosling-has-been-labelled-too-old-to-play-the-Ken-doll-in-the-Barbie-movie-set-for-release-in-2023.jpg.optimal 1.png"
+                      class="rounded-circle mb-4"
+                      width="140"
+                      height="140"
+                    />
+
+                    <h1 class="mb-3">Райан Груминг</h1>
+
+                    <span class="badge bg-success fs-6 px-4 py-2 mb-3">
+                      Активен
+                    </span>
+
+                    <div class="mb-2">
+                      <i class="bi bi-person-badge me-2"></i>
+                      Клиент
+                    </div>
+
+                    <div class="mb-4">ID: 271</div>
+
+                    <div class="text-muted small mb-2">
+                      Дата регистрации: 01.01.2014
+                    </div>
+
+                    <div class="text-muted small">
+                      Последний вход: 20.02.2026 14:30
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MAIN INFO -->
+              <div class="col-xl-6">
+                <div class="card border-0 h-100">
+                  <div class="card-body p-4">
+                    <h3 class="mb-4">Основная информация</h3>
+
+                    <div class="row gy-4">
+                      <div class="col-md-5 fw-semibold">Полное имя:</div>
+
+                      <div class="col-md-7">Болотный Шрек</div>
+
+                      <div class="col-md-5 fw-semibold">Автомобиль:</div>
+
+                      <div class="col-md-7">Subaru</div>
+
+                      <div class="col-md-5 fw-semibold">Email:</div>
+
+                      <div class="col-md-7">mik@kkkk</div>
+
+                      <div class="col-md-5 fw-semibold">Роль:</div>
+
+                      <div class="col-md-7">Клиент</div>
+
+                      <div class="col-md-5 fw-semibold">Статус:</div>
+
+                      <div class="col-md-7">
+                        <span class="badge bg-success fs-6"> Активен </span>
+                      </div>
+
+                      <div class="col-md-5 fw-semibold">Адрес:</div>
+
+                      <div class="col-md-7">Г. Москва, ул. Гороховая, д11</div>
+
+                      <div class="col-md-5 fw-semibold">Телефон:</div>
+
+                      <div class="col-md-7">+7(800)-555-35-35</div>
+
+                      <div class="col-md-5 fw-semibold">Примечания:</div>
+
+                      <div class="col-md-7">------------</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STATS -->
+              <div class="col-xl-3">
+                <div class="card border-0 h-100">
+                  <div class="card-body p-4">
+                    <h3 class="mb-5">Статистика</h3>
+
+                    <div class="d-flex justify-content-between mb-5">
+                      <span> Всего записей: </span>
+
+                      <strong> 20 </strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-5">
+                      <span> Завершенных: </span>
+
+                      <strong> 18 </strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-5">
+                      <span> В работе: </span>
+
+                      <strong> 1 </strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-5">
+                      <span> Отмененных: </span>
+
+                      <strong> 1 </strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <span> Всего потрачено: </span>
+
+                      <strong> 68,561 </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- HISTORY -->
+            <div class="card border-0">
+              <div class="card-body p-0">
+                <div class="p-4 border-bottom">
+                  <h2 class="m-0">История записей</h2>
+                </div>
+
+                <!-- DESKTOP TABLE -->
+                <div class="table-responsive d-none d-md-block">
+                  <table class="table align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th class="ps-4">ID</th>
+                        <th>Дата</th>
+                        <th>Автомобиль</th>
+                        <th>Услуга</th>
+                        <th>Статус</th>
+                        <th>Стоимость</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="ps-4">1</td>
+
+                        <td>01.10.2020</td>
+
+                        <td>Subaru</td>
+
+                        <td>Диагностика</td>
+
+                        <td>
+                          <span class="badge bg-primary"> Новый </span>
+                        </td>
+
+                        <td>1500</td>
+                      </tr>
+
+                      <tr>
+                        <td class="ps-4">2</td>
+
+                        <td>01.01.2005</td>
+
+                        <td>Subaru</td>
+
+                        <td>Диагностика</td>
+
+                        <td>
+                          <span class="badge bg-success"> Завершен </span>
+                        </td>
+
+                        <td>1500</td>
+                      </tr>
+
+                      <!-- EMPTY -->
+                      <tr>
+                        <td class="ps-4">&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- MOBILE HISTORY -->
+                <div class="d-md-none p-3">
+                  <!-- CARD -->
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <strong>1</strong>
+
+                        <span class="badge bg-primary"> Новый </span>
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Дата:</strong>
+                        01.10.2020
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Автомобиль:</strong>
+                        Subaru
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Услуга:</strong>
+                        Диагностика
+                      </div>
+
+                      <div>
+                        <strong>Стоимость:</strong>
+                        1500
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- CARD -->
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <strong>2</strong>
+
+                        <span class="badge bg-success"> Завершен </span>
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Дата:</strong>
+                        01.01.2005
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Автомобиль:</strong>
+                        Subaru
+                      </div>
+
+                      <div class="mb-2">
+                        <strong>Услуга:</strong>
+                        Диагностика
+                      </div>
+
+                      <div>
+                        <strong>Стоимость:</strong>
+                        1500
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <footer class="p-3">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between gap-2 text-center text-md-start"
+            >
+              <span> Copyright © 2026 AdminAuto.io. </span>
+
+              <span> All rights reserved. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE SIDEBAR -->
+    <div
+      class="offcanvas offcanvas-start bg-dark text-white"
+      tabindex="-1"
+      id="mobileSidebar"
+    >
+      <div class="offcanvas-header border-bottom border-secondary">
+        <h4 class="offcanvas-title">
+          Admin Auto
+        </h4>
+        <button class="btn btn-outline-secondary toggle p-1 m-4">
+          <img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column gap-4 fs-5">
+          <a
+            href="index.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-house-fill"></i>
+            <span>Главная</span>
+          </a>
+
+          <a
+            href="users.html"
+            class="text-white text-decoration-none fw-bold d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-person-fill"></i>
+            <span>Пользователи</span>
+          </a>
+
+          <a
+            href="record.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-journal-text"></i>
+            <span>Записи</span>
+          </a>
+
+          <a
+            href="service.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-tools"></i>
+            <span>Услуги</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-4.0.0.min.js"></script>
+
+    <script src="js/theme.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

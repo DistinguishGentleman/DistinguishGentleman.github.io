@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги | Admin Auto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/light_theme.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link id="theme-css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row vh-100 flex-nowrap">
+        <!-- SIDEBAR DESKTOP -->
+        <div class="sidebar col-lg-3 col-xl-2 bg-dark text-white p-0 d-none d-lg-block mybr">
+          <!-- LOGO -->
+          <div class="p-2 border-bottom border-secondary">
+            <div class="d-flex align-items-center gap-3 myqwer">
+              <h2 class="m-0 text-nowrap  fw-light">Admin Auto</h2>
+              <button class="btn btn-outline-secondary toggle p-1">
+                <img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
+            </div>
+          </div>
+
+          <!-- MENU -->
+          <div class="d-flex flex-column gap-4 p-2 fs-4">
+            <a
+              href="index.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-house-fill"></i>
+              <span>Главная</span>
+            </a>
+
+            <a
+              href="users.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-person-fill"></i>
+              <span>Пользователи</span>
+            </a>
+
+            <a
+              href="record.html"
+              class="text-white text-decoration-none d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-journal-text"></i>
+              <span>Записи</span>
+            </a>
+
+            <a
+              href="service.html"
+              class="text-white text-decoration-none fw-bold d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-tools"></i>
+              <span>Услуги</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col p-0 d-flex flex-column">
+          <!-- TOPBAR -->
+          <div class="topbar p-3">
+            <div
+              class="d-flex justify-content-between align-items-center gap-3"
+            >
+              <!-- MOBILE MENU -->
+              <button
+                class="btn btn-dark d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileSidebar"
+              >
+                <i class="bi bi-list fs-4"></i>
+              </button>
+
+              <!-- PROFILE -->
+              <div class="ms-auto">
+                <a
+                href="user.html"
+                class="d-flex align-items-center gap-2 text-decoration-none text-dark"
+              >
+                <img
+                  src="img/ryan.png"
+                  class="rounded-circle"
+                  width="45"
+                  height="45"
+                />
+
+                  <span class="fw-medium d-none d-md-block">
+                    Ryan Gosling
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN -->
+          <div class="p-3 p-md-4 overflow-auto">
+            <!-- TITLE -->
+            <div class="mb-4">
+              <h1 class="fw-semibold">Услуги</h1>
+            </div>
+
+            <!-- TABLE BLOCK -->
+            <div class="card border-0">
+              <!-- SEARCH -->
+              <div class="card-header bg-white border-bottom p-3 p-md-4">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Поиск..."
+                  />
+
+                  <span class="input-group-text bg-white">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- DESKTOP TABLE -->
+              <div class="table-responsive d-none d-md-block">
+                <table class="table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th class="ps-4">ID</th>
+                      <th>Название услуги</th>
+                      <th>Описание</th>
+                      <th>Длительность</th>
+                      <th>Цена</th>
+                      <th class="text-center">Действия</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <!-- SERVICE -->
+                    <tr>
+                      <td class="ps-4">1</td>
+
+                      <td class="fw-semibold">Диагностика автомобиля</td>
+
+                      <td style="max-width: 350px">
+                        <ul class="mb-0 ps-3">
+                          <li>Полная диагностика всех систем автомобиля.</li>
+
+                          <li>Проверка двигателя, трансмиссии и подвески.</li>
+
+                          <li>Использование современного оборудования.</li>
+                        </ul>
+                      </td>
+
+                      <td>1 час</td>
+
+                      <td>1500 ₽</td>
+
+                      <td>
+                        <div class="d-flex justify-content-center gap-3">
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-pencil fs-5"></i>
+                          </a>
+
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-trash fs-5"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- SERVICE -->
+                    <tr>
+                      <td class="ps-4">2</td>
+
+                      <td class="fw-semibold">Ремонт двигателя</td>
+
+                      <td style="max-width: 350px">
+                        <ul class="mb-0 ps-3">
+                          <li>Капитальный и текущий ремонт двигателя.</li>
+
+                          <li>Замена и ремонт деталей.</li>
+
+                          <li>Устранение неисправностей и дефектов.</li>
+                        </ul>
+                      </td>
+
+                      <td>5 часов</td>
+
+                      <td>8500 ₽</td>
+
+                      <td>
+                        <div class="d-flex justify-content-center gap-3">
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-pencil fs-5"></i>
+                          </a>
+
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-trash fs-5"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- EMPTY ROWS -->
+                    <tr>
+                      <td class="ps-4">&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-4">&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-4">&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- MOBILE CARDS -->
+              <div class="d-md-none p-3">
+                <!-- CARD -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Диагностика автомобиля</h5>
+
+                      <span class="fw-semibold"> 1 </span>
+                    </div>
+
+                    <div class="mb-3">
+                      Полная диагностика всех систем автомобиля.
+                    </div>
+
+                    <div class="mb-2">
+                      <strong>Длительность:</strong>
+                      1 час
+                    </div>
+
+                    <div class="mb-4">
+                      <strong>Цена:</strong>
+                      1500 ₽
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="btn btn-outline-dark">
+                        <i class="bi bi-pencil"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-outline-danger">
+                        <i class="bi bi-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Ремонт двигателя</h5>
+
+                      <span class="fw-semibold"> 2 </span>
+                    </div>
+
+                    <div class="mb-3">
+                      Капитальный и текущий ремонт двигателя.
+                    </div>
+
+                    <div class="mb-2">
+                      <strong>Длительность:</strong>
+                      5 часов
+                    </div>
+
+                    <div class="mb-4">
+                      <strong>Цена:</strong>
+                      8500 ₽
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="btn btn-outline-dark">
+                        <i class="bi bi-pencil"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-outline-danger">
+                        <i class="bi bi-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="d-flex justify-content-center mt-4">
+              <nav>
+                <ul class="pagination mb-0">
+                  <li class="page-item active">
+                    <a class="page-link" href="#"> 1 </a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#"> 2 </a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#"> 3 </a>
+                  </li>
+
+                  <li class="page-item disabled">
+                    <span class="page-link"> ... </span>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#"> 10 </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <footer class="p-3">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between gap-2 text-center text-md-start"
+            >
+              <span> Copyright © 2026 AdminAuto.io. </span>
+
+              <span> All rights reserved. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE SIDEBAR -->
+    <div
+      class="offcanvas offcanvas-start bg-dark text-white"
+      tabindex="-1"
+      id="mobileSidebar"
+    >
+      <div class="offcanvas-header border-bottom border-secondary">
+        <h4 class="offcanvas-title">
+          Admin Auto
+        </h4>
+        <button class="btn btn-outline-secondary toggle p-1 m-4">
+          <img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column gap-4 fs-5">
+          <a
+            href="index.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-house-fill"></i>
+            <span>Главная</span>
+          </a>
+
+          <a
+            href="users.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-person-fill"></i>
+            <span>Пользователи</span>
+          </a>
+
+          <a
+            href="record.html"
+            class="text-white text-decoration-none d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-journal-text"></i>
+            <span>Записи</span>
+          </a>
+
+          <a
+            href="service.html"
+            class="text-white text-decoration-none fw-bold d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-tools"></i>
+            <span>Услуги</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-4.0.0.min.js"></script>
+
+    <script src="js/theme.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

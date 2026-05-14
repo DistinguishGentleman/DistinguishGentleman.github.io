@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f6fa;
+  color: #1f2937;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* CARDS */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+}
+
+/* TABLE */
+.table {
+  color: #1f2937;
+}
+
+.table thead {
+  background: #f9fafb;
+}
+
+/* INPUTS */
+.form-control,
+.input-group-text {
+  background: #ffffff;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+/* FOOTER */
+footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* PAGINATION */
+.page-link {
+  color: #111827;
+}
+
+.page-item.active .page-link {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.sidebar {
+    font-family: "Inter", sans-serif  !important;
+}
+
+.theme {
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.theme {
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain;
+}
+
