@@ -15,17 +15,15 @@
   <body class="bg-light">
     <div class="container-fluid">
       <div class="row vh-100 flex-nowrap">
-        <!-- SIDEBAR DESKTOP -->
         <div class="sidebar col-lg-3 col-xl-2 bg-dark text-white p-0 d-none d-lg-block mybr">
-          <!-- LOGO -->
           <div class="p-2 border-bottom border-secondary">
             <div class="d-flex align-items-center gap-3 myqwer">
               <h2 class="m-0 text-nowrap  fw-light">Admin Auto</h2>
-              <button class="btn btn-outline-secondary toggle p-1"><img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
+              <button class="btn btn-outline-secondary toggle p-1">
+                <img class="theme" src="img/temnyj_rezhim_8s6jrd3oprzq 1.png" alt=""></button>
             </div>
           </div>
 
-          <!-- MENU -->
           <div class="d-flex flex-column gap-4 p-2 fs-4">
             <a
               href="index.html"
@@ -63,12 +61,11 @@
 
         <!-- CONTENT -->
         <div class="col p-0 d-flex flex-column">
-          <!-- TOPBAR -->
           <div class="topbar p-3">
             <div
               class="d-flex justify-content-between align-items-center gap-3"
             >
-              <!-- MOBILE MENU -->
+              <!-- MOBILE -->
               <button
                 class="btn btn-dark d-lg-none"
                 type="button"
@@ -78,7 +75,6 @@
                 <i class="bi bi-list fs-4"></i>
               </button>
 
-              <!-- SEARCH -->
               <div class="flex-grow-1">
                 <input
                   type="text"
@@ -86,8 +82,8 @@
                   placeholder="Поиск..."
                 />
               </div>
-
-              <!-- PROFILE -->
+              <a href="auth.html">
+                <img src="img/vhod_bwgyysmvt99s 2.png" alt=""></a>
               <a
                 href="user.html"
                 class="d-flex align-items-center gap-2 text-decoration-none text-dark"
@@ -104,11 +100,8 @@
             </div>
           </div>
 
-          <!-- MAIN -->
           <div class="p-3 p-md-4 overflow-auto">
-            <!-- STATS -->
             <div class="row g-3 mb-4">
-              <!-- CARD -->
               <div class="col-sm-6 col-xl-3">
                 <div class="card bg-danger text-white border-0 h-100">
                   <div
@@ -132,7 +125,6 @@
                 </div>
               </div>
 
-              <!-- CARD -->
               <div class="col-sm-6 col-xl-3">
                 <div class="card bg-success text-white border-0 h-100">
                   <div
@@ -155,7 +147,6 @@
                 </div>
               </div>
 
-              <!-- CARD -->
               <div class="col-sm-6 col-xl-3">
                 <div class="card bg-primary text-white border-0 h-100">
                   <div
@@ -178,7 +169,6 @@
                 </div>
               </div>
 
-              <!-- CARD -->
               <div class="col-sm-6 col-xl-3">
                 <div class="card bg-info text-white border-0 h-100">
                   <div
@@ -202,9 +192,7 @@
               </div>
             </div>
 
-            <!-- CHARTS -->
             <div class="row g-4 mb-4">
-              <!-- LINE -->
               <div class="col-lg-7">
                 <div class="card border-0 h-100">
                   <div class="card-body">
@@ -215,7 +203,6 @@
                 </div>
               </div>
 
-              <!-- PIE -->
               <div class="col-lg-5">
                 <div class="card border-0 h-100">
                   <div class="card-body">
@@ -231,12 +218,10 @@
               </div>
             </div>
 
-            <!-- TABLE -->
             <div class="card border-0">
               <div class="card-body">
                 <h5 class="mb-4">Последние записи:</h5>
 
-                <!-- DESKTOP TABLE -->
                 <div class="table-responsive d-none d-md-block">
                   <table class="table align-middle">
                     <thead>
@@ -269,7 +254,6 @@
                   </table>
                 </div>
 
-                <!-- MOBILE TABLE -->
                 <div class="d-md-none">
                   <div class="border rounded p-3 mb-3">
                     <div class="d-flex justify-content-between mb-2">
@@ -326,7 +310,7 @@
       </div>
     </div>
 
-    <!-- MOBILE SIDEBAR -->
+    <!-- M SIDEBAR -->
     <div
       class="offcanvas offcanvas-start bg-dark text-white"
       tabindex="-1"
@@ -383,7 +367,6 @@
     </div>
 
     <script>
-      // LINE CHART
       const lineCtx = document.getElementById("lineChart");
 
       new Chart(lineCtx, {
@@ -401,7 +384,6 @@
         },
       });
 
-      // PIE CHART
       const pieCtx = document.getElementById("pieChart");
 
       new Chart(pieCtx, {
